@@ -1,0 +1,55 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "801dff26fc88bbc45f3de2a1d7e3cf6d",
+    "packages": [
+        {
+            "name": "mercadopago/sdk",
+            "version": "v0.5.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mercadopago/sdk-php.git",
+                "reference": "b9fd134a39ff483e1326028ee0b9bbaa16ec927e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mercadopago/sdk-php/zipball/b9fd134a39ff483e1326028ee0b9bbaa16ec927e",
+                "reference": "b9fd134a39ff483e1326028ee0b9bbaa16ec927e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/mercadopago.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Horacio Casatti",
+                    "email": "horacio.casatti@mercadolibre.com"
+                }
+            ],
+            "description": "MercadoPago SDK module for Payments integration.",
+            "keywords": [
+                "mercadopago",
+                "sdk"
+            ],
+            "time": "2018-10-30T17:21:08+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
