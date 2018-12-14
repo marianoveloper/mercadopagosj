@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Factura de compra</title>
+    <link rel="stylesheet" href="invoice/style.css" media="all" />
+  </head>
+  <body>
+    <header class="clearfix">
+      <div id="logo">
+        <img src="invoice/logo2.png">
+      </div>
+      <div id="company">
+        <h2 class="name">CHECK & SALE</h2>
+        <div>455 Foggy Heights, AZ 85004, US</div>
+        <div>(264) 5749807</div>
+        <div><a href="mailto:info@checksale.com.ar">info@checksale.com.ar</a></div>
+      </div>
+      </div>
+    </header>
+    <main>
+      <div id="details" class="clearfix">
+        <div id="client">
+          <div class="to">Local de: </div>
+          <h2 class="name">John Wick</h2>
+          <div class="address">Libertador 8064 (O), Rivadavia, San Juan</div>
+          <div class="email"><a href="mailto:john@gmail.com">john@gmail.com</a></div>
+        </div>
+        <div id="invoice">
+          <div class="date">Fecha: 22/12/2018</div>
+        </div>
+      </div>
+      <table border="0" cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th class="no">#</th>
+            <th class="desc">PRODUCTO</th>
+            <th class="unit">PRECIO POR UNIDAD / KILO </th>
+            <th class="qty">CANTIDAD</th>
+            <th class="total">TOTAL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="no">01</td>
+            <td class="desc"><h3>Tomate</h3></td>
+            <td class="unit">$40.00</td>
+            <td class="qty">1 KG</td>
+            <td class="total">$30</td>
+          </tr>
+          <tr>
+            <td class="no">02</td>
+            <td class="desc"><h3>Melón</h3></td>
+            <td class="unit">$40.00</td>
+            <td class="qty">1</td>
+            <td class="total">$40</td>
+          </tr>
+          <tr>
+            <td class="no">03</td>
+            <td class="desc"><h3>Papas</h3></td>
+            <td class="unit">$35.00</td>
+            <td class="qty">500 G</td>
+            <td class="total">$14.50</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="2">SUBTOTAL</td>
+            <td>$84.50</td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="2">IVA 21%</td>
+            <td>$17</td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="2">TOTAL</td>
+            <td>$102</td>
+          </tr>
+        </tfoot>
+      </table>
+      
+          </main>
+    <footer>
+      Sistema de ventas desarrollado en San Juan TEC.
+    </footer>
+  </body>
+</html>

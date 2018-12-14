@@ -1,7 +1,7 @@
 <?php
 require_once "lib/mercadopago.php";
  
-$mp = new MP('8388987857162431', 'whaaXWYDxrEvlKwy8NWBDLXx3b6d6hQF');
+$mp = new MP('7657905071534031', 'uKbA1hwm0ikxbKU3WGnSadZPAr8Urmso');
 $preference_data = array(
 	"items" => array(
 		array(
@@ -35,9 +35,9 @@ $preference_data = array(
 		)
 	),
 	"back_urls" => array(
-		"success" => "https://www.success.com",
-		"failure" => "http://www.failure.com",
-		"pending" => "http://www.pending.com"
+		"success" => "http://localhost/mercado_pago/mercadopagosj/return.php",
+		"cancelled" => "http://localhost/mercado_pago/mercadopagosj/return.php",
+		"pending" => "http://localhost/mercado_pago/mercadopagosj/return.php"
 	),
 	"auto_return" => "approved",
 	"payment_methods" => array(
@@ -79,7 +79,18 @@ $preference = $mp->create_preference($preference_data);
 		<title>MercadoPago SDK - Create Preference and Show Checkout Example</title>
 	</head>
 	<body>
-	<button >	<a href="<?php echo $preference["response"]["sandbox_init_point"]; ?>" name="MP-Checkout" class="orange-ar-m-sq-arall">Pay</a>
-		<script type="text/javascript" src="//resources.mlstatic.com/mptools/render.js"></script></button>
+
+	<?php include("invoice/invoice.html");
+	?>
+<br><br>
+	<div align="center">
+	<button>	<a href="<?php echo $preference["response"]["sandbox_init_point"]; ?>" name="MP-payButton" class='blue-ar-l-rn-aron'>Pagar por Mercado Pago</a>  
+<script type="text/javascript">
+(function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
+</script>
+</button>
+</div>
+
+	
 	</body>
 </html>
